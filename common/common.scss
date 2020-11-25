@@ -58,7 +58,7 @@ p{
     position: relative;
     top: -2rem;
     background-color: $tertiary;
-    color: #fff;
+    color: var(--light-accent);
     .d-icon{
       color: currentColor;
     }
@@ -89,7 +89,7 @@ p{
 .container{
   &.list-container, 
   .user-content{
-    background-color: #ffffff;
+    background-color: var(--main-background);
   }
   &.posts{
     margin-bottom: 2rem;
@@ -357,7 +357,7 @@ ol.category-breadcrumb{
   &.dropdown-select-box{
     .select-kit-body{
       border: none;
-      background-color: #fff;
+      background-color: var(--main-background);
       box-shadow: 0 12px 12px rgba(0,0,0,0.15);
     }
   }
@@ -438,7 +438,7 @@ ol.category-breadcrumb{
 }
 
 .menu-panel{
-  background-color: #fff;
+  background-color: var(--main-background);
   border-radius: .5rem;
   li {
     a{
@@ -446,9 +446,9 @@ ol.category-breadcrumb{
     }
     a.widget-link:hover{
       background-color: var(--tertiary);
-      color: #fff;
+      color: var(--light-accent);
       .d-icon{
-        color: #fff;
+        color: var(--light-accent);
       }
     }
   }

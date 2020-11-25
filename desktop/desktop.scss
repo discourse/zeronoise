@@ -9,7 +9,7 @@
   }
   &.posts{
     & > .row{
-      background: #fff;
+      background: var(--main-background);
       padding: 1.5rem 2.5rem;
       border-radius: 0.5rem;
       box-shadow: 0px 15px 27px rgba(17,7,60,0.15);
