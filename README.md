@@ -44,13 +44,13 @@ Since I'm using a black background in the header and the discourse logo is mainl
 I believe all themes are a work in progress so feel free to open an issue if you have suggestions, and obviously to fork it if you want to make it to your taste :) 
 
 ## More screenshots to give you a sneak a peek
-![topic](https://user-images.githubusercontent.com/1082144/100288928-60e40980-2f3d-11eb-8261-14dae619f103.png | width=200)
-![topic-2](https://user-images.githubusercontent.com/1082144/100288929-617ca000-2f3d-11eb-9a77-f6455fa19c26.png | width=200)
+<img src="https://user-images.githubusercontent.com/1082144/100288928-60e40980-2f3d-11eb-8261-14dae619f103.png" width="50%" alt="topic"/>
+<img src="https://user-images.githubusercontent.com/1082144/100288929-617ca000-2f3d-11eb-9a77-f6455fa19c26.png" width="50%" alt="topic"/>
 
 ## Works good on mobile of course 
-![mobile-topic-list](https://user-images.githubusercontent.com/1082144/100288922-5fb2dc80-2f3d-11eb-8bd9-facb2c90cd31.PNG | width=200)
-![mobile-topic](https://user-images.githubusercontent.com/1082144/100288926-604b7300-2f3d-11eb-9954-6692916deedc.PNG | width=200)
-![mobile-menu](https://user-images.githubusercontent.com/1082144/100288917-5d508280-2f3d-11eb-9266-5b49fafbb1ed.PNG | width=200)
-![mobile-profile](https://user-images.githubusercontent.com/1082144/100288919-5f1a4600-2f3d-11eb-9f8c-348b530441b4.PNG | width=200)
+<img src="https://user-images.githubusercontent.com/1082144/100288922-5fb2dc80-2f3d-11eb-8bd9-facb2c90cd31.PNG" width="50%" alt="topic"/>
+<img src="https://user-images.githubusercontent.com/1082144/100288926-604b7300-2f3d-11eb-9954-6692916deedc.PNG" width="50%" alt="topic"/>
+<img src="https://user-images.githubusercontent.com/1082144/100288917-5d508280-2f3d-11eb-9266-5b49fafbb1ed.PNG" width="50%" alt="topic"/>
+<img src="https://user-images.githubusercontent.com/1082144/100288919-5f1a4600-2f3d-11eb-9f8c-348b530441b4.PNG" width="50%" alt="topic"/>
 
 
