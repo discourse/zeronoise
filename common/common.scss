@@ -38,6 +38,7 @@ p{
     &:hover {
       border-bottom-color: lighten($tertiary, 40);
       background-color: transparent;
+      color: var(--primary);
     }
     &.active{
       color: lighten($primary, 0);
