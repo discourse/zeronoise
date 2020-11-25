@@ -1,3 +1,9 @@
+.container{
+  &.posts{
+    background-color: #fff;
+  }
+}
+
 .d-header{
   .wrap{
     padding: 0 1.5rem 0 1.6rem;
@@ -79,10 +85,31 @@
   .title-wrapper{
     box-sizing: border-box;
     margin: 0 -10px;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0;
   }
 }
 
+.topic-avatar {
+  padding-top: 7px;
+  margin-right: 0;
+  img{
+    width: 32px;
+    height: auto;
+  }
+}
+
+.topic-meta-data{
+  margin-left: 40px;
+}
+
+.topic-post{
+  article{
+    border-top: none;
+  }
+  .row{
+    padding-top: 2rem;
+  }
+}
 .topic-post:first-child{
   article{
     border-top: none;
@@ -91,4 +118,8 @@
 
 .topic-list tbody {
   border-top: none;
+}
+
+.topic-meta-data{
+  align-items: center;
 }

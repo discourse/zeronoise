@@ -17,7 +17,7 @@
 }
 .topic-post:first-child{
   .username{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .topic-body{
     -webkit-animation: none !important;
@@ -156,9 +156,4 @@ aside.onebox{
   .topic-header-extra{
     display: none;
   }
-}
-
-.container.posts .topic-navigation{
-  transform: translateY(-52.1%);
-  top: 18.6em;
 }
