@@ -2,7 +2,7 @@
   "name": "zeronoise",
   "component": false,
   "license_url": null,
-  "about_url": null,
+  "about_url": "https://github.com/ruidovisual/zeronoise",
   "authors": "Miguel Arroyo - http://ruidovisual.com",
   "theme_version": 1.0,
   "minimum_discourse_version": null,
