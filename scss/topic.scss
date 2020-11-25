@@ -7,12 +7,15 @@
       font-weight: 600;
     }
   }
-}
-.topic-post:first-child{
   .topic-body,
   .topic-avatar {
     border: none;
   }
+  .row {
+    padding-top: 4rem;
+  }
+}
+.topic-post:first-child{
   .username{
     font-size: 1.5rem;
   }
@@ -23,8 +26,17 @@
     -ms-animation: none !important;
     animation: none !important;
   }
-  
+  .contents{
+    font-size: 1.1rem;
+    p {
+      line-height: 1.9;
+    }
+  }
+  .row{
+    padding-top: 1rem;
+  }
 }
+
 
 .topic-status-info{
   border-top: none;
@@ -144,4 +156,9 @@ aside.onebox{
   .topic-header-extra{
     display: none;
   }
+}
+
+.container.posts .topic-navigation{
+  transform: translateY(-52.1%);
+  top: 18.6em;
 }
