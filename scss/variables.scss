@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+@mixin badge ($color){
+  color: $color;
+  background: linear-gradient(149deg, $color, lighten($color, 40), $color);
+  border-color: darken($color, 10);
+  .fa{
+    color: darken($color, 10) !important;
+  }
+}
+
+@function get_invert($invert){
+  @if $invert == "true"{
+    @return 1
+  } 
+  @return 0 
+}
+
+@function get_brightness($amount){
+  @return unquote($amount)
+}
+
+%btn--big{
+  padding: 1rem 2rem;
+}
+
+:root{
+  // --scheme-type: light;
+  // --primary: #2d2a3d;
+  // --secondary: #f4f4f9;
+  // --tertiary: #4f31cd;
+  // --quaternary: #4831a8;
+  // --header_background: #000;
+  // --header_primary: #fff;
+  // --highlight: #4da;
+  // --danger: #ff5959;
+  // --success: #090;
+  // --love: #fa6c8d;
+  // --always-black-rgb: 0, 0, 0;
+  // --primary-rgb: 45,42,61;
+  // --primary-low-rgb: 232.08155,230.89612,238.40388;
+  // --secondary-rgb: 244,244,249;
+  // --header_background-rgb: 0,0,0;
+  // --tertiary-rgb: 79,49,205;
+  // --primary-very-low: #f8f8fa;
+  // --primary-low: #e8e7ee;
+  // --primary-low-mid: #bab7cd;
+  // --primary-medium: #8c86ac;
+  // --primary-high: #625c85;
+  // --primary-very-high: #484361;
+  // --header_primary-low: #383838;
+  // --header_primary-low-mid: #8c8c8c;
+  // --header_primary-medium: #a6a6a6;
+  // --header_primary-high: #bfbfbf;
+  // --header_primary-very-high: #e6e6e6;
+  // --secondary-low: #343460;
+  // --secondary-medium: #5757a0;
+  // --secondary-high: #8484bc;
+  // --secondary-very-high: #dedeed;
+  // --tertiary-low: #e5e0f8;
+  // --tertiary-medium: #a798e6;
+  // --tertiary-high: #725ad7;
+  // --tertiary-hover: #3b259a;
+  // --quaternary-low: #c4bbeb;
+  // --highlight-low: #c7f5e6;
+  // --highlight-medium: #a2eed5;
+  // --highlight-high: #167a59;
+  // --danger-low: #ffe6e6;
+  // --danger-low-mid: rgba(255,172,172,0.7);
+  // --danger-medium: #ff8b8b;
+  // --danger-hover: #ff1414;
+  // --success-low: #b8ffb8;
+  // --success-medium: #4dff4d;
+  // --success-hover: #007a00;
+  // --love-low: #fee9ee;
+  // --wiki: green;
+  // --blend-primary-secondary-5: #eeeef3;
+  // --primary-med-or-secondary-med: #8c86ac;
+  // --primary-med-or-secondary-high: #8c86ac;
+  // --primary-high-or-secondary-low: #625c85;
+  // --primary-low-mid-or-secondary-high: #bab7cd;
+  // --primary-low-mid-or-secondary-low: #bab7cd;
+  // --primary-or-primary-low-mid: #2d2a3d;
+  // --highlight-low-or-medium: #c7f5e6;
+  // --tertiary-low-or-tertiary-high: #e5e0f8;
+  // --tertiary-med-or-tertiary: #a798e6;
+  // --secondary-or-primary: #f4f4f9;
+  // --tertiary-or-white: #4f31cd;
+  // --facebook-or-white: #4267b2;
+  // --twitter-or-white: #1da1f2;
+  // --hljs-comment: #998;
+  // --hljs-number: #099;
+  // --hljs-string: #d14;
+  // --hljs-literal: #458;
+  // --hljs-tag: #000080;
+  // --hljs-attribute: #008080;
+  // --hljs-symbol: #990073;
+  // --hljs-bg: #f8f8f8;
+  // --google: #fff;
+  // --google-hover: #f2f2f2;
+  // --instagram: #e1306c;
+  // --instagram-hover: #ac194b;
+  // --facebook: #4267b2;
+  // --facebook-hover: #2d477a;
+  // --cas: #70ba61;
+  // --twitter: #1da1f2;
+  // --twitter-hover: #0c85d0;
+  // --github: #100e0f;
+  // --github-hover: #463e42;
+  // --discord: #7289da;
+  // --discord-hover: #4a67cf;
+  // --gold: #e7c300;
+  // --silver: silver;
+  --heading-font-family: "Playfair Display", serif;
+  --bronze: #a7713c;
+  --text-font-family: Inter, sans-serif;
+  --secondary-font: "Playfair Display", serif;
+}
+
+$font-size-large: 3rem;

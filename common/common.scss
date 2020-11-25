@@ -1,0 +1,472 @@
+@import 'variables';
+@import 'topic';
+@import 'topic-list';
+
+// General 
+.btn {
+  border-radius: 2rem;
+}
+
+p{
+  line-height: 1.6;
+}
+
+// Header
+.d-header {
+  #site-logo{
+    max-height: 2em;
+    max-width: 100%;
+    filter: invert(get_invert($logo-invert-colors)) hue-rotate(#{$logo-hue-rotation}deg) brightness(calc((#{$logo-brightness} / 10) + 1));
+  }
+}
+
+.nav-pills{
+  & > li{
+    margin-right: 0;
+  }
+  & > li > a{
+    background-color: transparent;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding: .75em 1.5em;
+    color: lighten($primary, 30);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    line-height: 1.7rem;
+    &:hover {
+      border-bottom-color: lighten($tertiary, 40);
+      background-color: transparent;
+    }
+    &.active{
+      color: lighten($primary, 0);
+      background-color: transparent;
+      border-bottom-color: $tertiary;
+      font-weight: bold;
+    }
+  }
+}
+
+.list-controls {
+  margin-bottom: 0;
+  .nav, 
+  .btn{
+    margin-bottom: 0;
+  }
+  .btn{
+    position: relative;
+    top: -2rem;
+    background-color: $tertiary;
+    color: #fff;
+    .d-icon{
+      color: currentColor;
+    }
+  }
+  ol.category-breadcrumb{
+    margin-bottom: 0;
+    padding-left: 1rem;
+  }
+  .select-kit{
+    float: none;
+    .name{
+      text-transform: uppercase;
+      font-size: .75rem;
+      letter-spacing: 0.03em;
+    }
+    .combo-box-header{
+      border: none;
+      padding: 0;
+      margin-right: 1.5rem;
+    }
+    .selected-name{
+      padding-top: 4px;
+    }
+  }
+}
+
+// List and Post 
+.container{
+  &.posts,
+  &.list-container, 
+  .user-content{
+    background-color: #ffffff;
+  }
+  &.posts{
+    margin-bottom: 2rem;
+  }
+  .user-content{
+    border-radius: .5rem;
+    padding: 2rem;
+  }
+}
+
+.category-list .category-name{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+
+
+.header-title{
+  font-weight: 100;
+}
+
+.d-header-icons .d-icon {
+  color: $header-primary;
+  font-size: 1em;
+}
+
+ol.category-breadcrumb{
+  float: none;
+  display: flex;
+}
+
+
+// User Profile
+.user-main .about.collapsed-info .details .primary h1,
+.user-main .about .details h1{
+  font-size: $font-size-large;
+}
+
+#list-area .show-more.has-topics .alert{
+  background-color: rgba(240, 239, 246, 1.000);
+  border-radius: 2rem;
+  align-items: center;
+  position: relative;
+  transition: all .2s;
+  &::before{
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+    background-color: $danger;
+  }
+  &:hover{
+    background-color: rgba(240, 239, 246, .6);
+    text-decoration: underline;
+  }
+}
+
+//directory 
+.directory .user-info{
+  display: flex;
+  align-items: center;
+}
+
+
+#create-topic{
+  @extend %btn--big;
+}
+
+.badge{
+  &-category-bg,
+  &-wrapper.bullet &-category-parent-bg,
+  &-wrapper.bullet &-category-parent-bg + &-category-bg{
+    border-radius: 50%;
+    width: 9px;
+  }
+  &-category-parent-bg{
+    position: relative;
+    z-index: 2;
+  }
+  &-wrapper.bullet &-category-parent-bg + &-category-bg{
+    position: relative;
+    z-index: 1;
+    margin-left: -5px;
+  }
+}
+
+.user-card{
+  background: none!important; // This is a conscious override to the custom background behavior. 
+  border-radius: .5rem;
+  overflow: hidden;
+  .card-content{
+    background-color: white;
+    padding: 1.5rem 1rem;
+  }
+  .first-row {
+    .user-card-avatar{
+      margin-top: 0;
+    }
+    .names,
+    .usercard-controls{
+      align-self: center;
+    }
+  }
+  .card-row:not(.first-row){
+    margin: 2rem 0 1rem;
+    font-size: 12px;
+    padding-left: 9.3rem;
+    // display: none;
+  }
+  .badge-section{
+    font-size: 12px;
+    margin-left: -2px;
+    .ember-view{
+      border-radius: 16px;
+    }
+  }
+}
+
+
+
+.modal{
+  border-radius: 16px;
+}
+
+.modal-footer,
+.modal-body:not(#keyboard-shortcuts-help){
+  text-align: center;
+}
+
+.modal-body{
+  font-size: 1.2rem;
+}
+
+.modal-footer, 
+.save-or-cancel, 
+.usercard-controls,
+.user-main .details{
+  .btn{
+    @extend %btn--big;
+  }
+}
+
+
+.stats-title{
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+
+.top-section:not(.stats-section):not(.badges-section){
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  &:before{
+    display: none;
+  }
+}
+
+.top-sub-section{
+  width: auto;
+}
+
+.badge-card{
+  border: none;
+  background: transparent;
+  .badge-contents .badge-icon a{
+    text-align: center;
+    border: 5px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    box-shadow: inset -2px 0px 5px rgba(0, 0, 0, .3)
+  }
+  .badge-contents .badge-icon.badge-type-bronze a{
+    @include badge($bronze)
+  }
+  .badge-contents .badge-icon.badge-type-gold a{
+    @include badge($gold)
+  }
+  .badge-contents .badge-icon.badge-type-silver a{
+    @include badge($silver)
+  }
+  .d-icon{
+    width: 2rem;
+  }
+  .badge-summary{
+    color: lighten($primary, 30);
+  }
+  .badge-contents .badge-info h3{
+    margin-bottom: 0
+  }
+}
+
+
+.user-stream {
+  .avatar-wrapper{
+    margin-right: 16px;
+  }
+  .excerpt{
+    padding-left: 65px;
+  }
+  .stream-topic-title{
+    font-family: var(--heading-font-family);
+    font-size: 1.1rem;
+    a{
+      color: inherit;
+    }
+    a:visited{
+      color: inherit;
+      opacity: .5;
+    }
+  }
+  .excerpt{
+    font-size: .85rem;
+  }
+}
+
+
+.footer-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  padding-top: 3rem;
+  h3 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: lighten($primary, 40);
+    &::after{
+      content: '✨';
+    }
+  }
+}
+
+#list-area{
+  margin-bottom: 0
+}
+
+
+.user-nav{
+  margin-bottom: 0;
+}
+
+.user-content .alert.alert-info{
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: lighten($primary, 40);
+  background-color: transparent;
+  &::after{
+    content: '🤖';
+  }
+}
+
+.select-kit.dropdown-select-box.period-chooser {
+  .period-chooser-row{
+    font-weight: normal; 
+    .top-date-string{
+      display: block;
+      font-size: .75rem;
+      white-space: nowrap;
+      margin-left: 0;
+    } 
+  }
+  .period-chooser-header{
+    border-radius: 0;
+    margin-left: .6rem;
+    // I have a personal standard of not going further than 2 indentation levels while creating scss rules
+    h2.selected-name .top-date-string{
+      font-size: .85rem;
+      display: block;
+      margin-top: .5em;
+    }
+    h2.selected-name .date-section{
+      font-size: 1.2rem;
+    }
+  } 
+}
+
+.d-header-icons, 
+.drop-down-mode .d-header-icons{
+  .icon:hover,
+  .icon:focus,
+  .active .icon, 
+  .active .icon:hover{
+    border-radius: 50%;
+    background-color: var(--tertiary);
+    border-color: transparent;
+    .d-icon{
+      color: var(--secondary);
+    }
+  }
+  .icon img.avatar{
+    position: relative;
+    top: -1px;
+  }
+}
+
+.menu-panel{
+  background-color: #fff;
+  border-radius: 1rem;
+  li {
+    a{
+      transition: all .2s;
+    }
+    a.widget-link:hover{
+      background-color: var(--tertiary);
+      .d-icon{
+        color: #fff;
+      }
+    }
+  }
+}
+
+#list-area .top-lists h2{
+  margin-bottom: 0;
+}
+
+#keyboard-shortcuts-help{
+  .column{
+    section{
+      padding: 1rem;
+      margin: 1rem .5rem;
+      border: 1px solid var(--primary-low);
+      border-radius: 1rem;
+    }
+  }
+  ul li {
+    font-size: 1rem;
+  }
+}
+
+div.menu-links-header {
+  .menu-links-row {
+    li a.active .d-icon{
+      color: var(--tertiary);
+    }
+  }
+}
+
+.user-menu{
+  .quick-access-panel {
+    ul {
+      padding: .5rem;
+    }
+    li {
+      background-color: transparent;
+      font-size: .85rem;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    .read{
+      background-color: transparent;
+      opacity: .7;
+    }
+    li a{
+      color: inherit;
+      padding: .75rem .25rem;
+      &:hover{
+        background-color: var(--primary-low);
+      }
+    }
+  }
+  .quick-access-profile{
+    .read{
+      opacity: 1;
+    }
+  }
+
+}
