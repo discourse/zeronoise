@@ -3,8 +3,8 @@
   "component": false,
   "license_url": null,
   "about_url": null,
-  "authors": null,
-  "theme_version": null,
+  "authors": "Miguel Arroyo - http://ruidovisual.com",
+  "theme_version": 1.0,
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
@@ -15,6 +15,7 @@
       "secondary": "f4f4f9", // Applies to the background and .nav-pills>li a.active
       "tertiary": "4f31cd", // Call to actions and links
       "quaternary": "4831a8", // You can see it in the top menu
+      "main_background": "ffffff",
       "header_background": "000000",
       "header_primary": "ffffff",
       "highlight": "8a51e7", // Applies to the title of the list of Time Periods in the "Top" tab of the main menu.
