@@ -2,6 +2,7 @@
 ## A Modern Discourse Theme 
 
 This is a CSS Only theme. 
+
 The main goal of the theme is improve readability, defining the interest areas and separating them from the background through color. 
 It also tries to emphasize the topics and the authors through text hierarchies. 
 
