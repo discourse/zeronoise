@@ -6,9 +6,6 @@ The main goal of the theme is improve readability, defining the interest areas a
 It also tries to emphasize the topics and the authors through text hierarchies. 
 
 ![topic-list](https://user-images.githubusercontent.com/1082144/100288931-617ca000-2f3d-11eb-8687-dd2dcdd2d6e9.png)
-![topic](https://user-images.githubusercontent.com/1082144/100288928-60e40980-2f3d-11eb-8261-14dae619f103.png)
-![topic-2](https://user-images.githubusercontent.com/1082144/100288929-617ca000-2f3d-11eb-9a77-f6455fa19c26.png)
-
 
 ## Colors
 You can edit the color palette in the `about.json` file
@@ -42,13 +39,17 @@ I added the Playfair Display Font to make the titles a bit more interesting. You
 ## Theme Settings 
 Since I'm using a black background in the header and the discourse logo is mainly dark, I used some css filters to add contrast to it. You can check the settings in the `settings.yaml` (and also in the theme page when you install it) in case you want to change something. 
 
+## Final Note. 
+I believe all themes are a work in progress so feel free to open an issue if you have suggestions, and obviously to fork it if you want to make it to your taste :) 
+
+## More screenshots to give you a sneak a peek
+![topic](https://user-images.githubusercontent.com/1082144/100288928-60e40980-2f3d-11eb-8261-14dae619f103.png)
+![topic-2](https://user-images.githubusercontent.com/1082144/100288929-617ca000-2f3d-11eb-9a77-f6455fa19c26.png)
+
 ## Works good on mobile of course 
 ![mobile-topic-list](https://user-images.githubusercontent.com/1082144/100288922-5fb2dc80-2f3d-11eb-8bd9-facb2c90cd31.PNG)
 ![mobile-topic](https://user-images.githubusercontent.com/1082144/100288926-604b7300-2f3d-11eb-9954-6692916deedc.PNG)
 ![mobile-menu](https://user-images.githubusercontent.com/1082144/100288917-5d508280-2f3d-11eb-9266-5b49fafbb1ed.PNG)
 ![mobile-profile](https://user-images.githubusercontent.com/1082144/100288919-5f1a4600-2f3d-11eb-9f8c-348b530441b4.PNG)
-
-## Final Note. 
-I believe all themes are a work in progress so feel free to open an issue if you have suggestions, and obviously to fork it if you want to make it to your taste :) 
 
 
