@@ -1,5 +1,5 @@
 .topic-post{
-  .username{
+  .first{
     line-height: 45px;
     font-size: 1.2rem;
     a{
@@ -16,7 +16,7 @@
   }
 }
 .topic-post:first-child{
-  .username{
+  .first {
     font-size: 1.3rem;
   }
   .topic-body{
