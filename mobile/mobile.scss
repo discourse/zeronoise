@@ -33,7 +33,7 @@
       overflow: hidden;
     }
   }
-  .btn{
+  #create-topic{
     position: fixed;
     bottom: 5vh;
     top: auto;
@@ -122,4 +122,12 @@
 
 .topic-meta-data{
   align-items: center;
+}
+
+.login-modal tr td label, .create-account tr td label {
+  max-width: unset;
+}
+
+.list-controls .btn {
+  top: 0;
 }

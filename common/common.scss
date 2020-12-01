@@ -156,7 +156,6 @@ ol.category-breadcrumb{
   align-items: center;
 }
 
-
 #create-topic{
   @extend %btn--big;
 }
@@ -514,4 +513,8 @@ div.menu-links-header {
     }
   }
 
+}
+
+div.menu-links-header .menu-links-row li a.active {
+  border-bottom-color: var(--main-background);
 }
