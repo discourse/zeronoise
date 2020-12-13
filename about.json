@@ -15,7 +15,7 @@
       "secondary": "f4f4f9", // Applies to the background and .nav-pills>li a.active
       "tertiary": "4f31cd", // Call to actions and links
       "quaternary": "ffffff", // You can see it in the top menu
-      "header_background": "000000",
+      "header_background": "3f51b5",
       "header_primary": "ffffff", // It's the text and icons color in the header
       "highlight": "8a51e7", // Applies to the title of the list of Time Periods in the "Top" tab of the main menu.
       "danger": "ed2f2f",
