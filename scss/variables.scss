@@ -1,30 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
 
-@mixin badge ($color){
+@mixin badge($color) {
   color: $color;
   background: linear-gradient(149deg, $color, lighten($color, 40), $color);
   border-color: darken($color, 10);
-  .fa{
+  .fa {
     color: darken($color, 10) !important;
   }
 }
 
-@function get_invert($invert){
-  @if $invert == "true"{
-    @return 1
-  } 
-  @return 0 
+@function get_invert($invert) {
+  @if $invert == "true" {
+    @return 1;
+  }
+  @return 0;
 }
 
-@function get_brightness($amount){
-  @return unquote($amount)
+@function get_brightness($amount) {
+  @return unquote($amount);
 }
 
-%btn--big{
+%btn--big {
   padding: 1rem 2rem;
 }
 
-:root{
+:root {
   // --scheme-type: light;
   // --primary: #2d2a3d;
   // --secondary: #f4f4f9;

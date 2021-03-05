@@ -1,39 +1,39 @@
-.container{
-  &.posts{
+.container {
+  &.posts {
     background-color: var(--main-background);
   }
 }
 
-.d-header{
-  .wrap{
+.d-header {
+  .wrap {
     padding: 0 1.5rem 0 1.6rem;
   }
-  #site-logo{
+  #site-logo {
     max-height: 1.6em;
   }
 }
 
-.nav-pills{
-  & > li{
+.nav-pills {
+  & > li {
     margin-right: 0;
   }
-  & > li > a{
-    padding: .75rem .85rem .4rem;
+  & > li > a {
+    padding: 0.75rem 0.85rem 0.4rem;
   }
 }
 
 .list-controls {
-  ol.category-breadcrumb{
+  ol.category-breadcrumb {
     padding-left: 0;
   }
-  .nav-pills{
+  .nav-pills {
     margin: 0 1rem;
-    .navigation-toggle{
+    .navigation-toggle {
       border-radius: 2rem;
       overflow: hidden;
     }
   }
-  #create-topic{
+  #create-topic {
     position: fixed;
     bottom: 5vh;
     top: auto;
@@ -43,31 +43,30 @@
   }
 }
 
-#list-area .top-lists h2{
-  padding-top: .5rem;
+#list-area .top-lists h2 {
+  padding-top: 0.5rem;
 }
 
-
-.topic-list td{
+.topic-list td {
   padding: 1rem 0;
 }
 
-.topic-list-item .main-link:first-of-type{
+.topic-list-item .main-link:first-of-type {
   padding-left: 0;
 }
 
-.top-section:not(.stats-section):not(.badges-section){
+.top-section:not(.stats-section):not(.badges-section) {
   display: block;
-  .pull-right, 
-  .pull-left{
+  .pull-right,
+  .pull-left {
     float: none;
   }
 }
 
-.container{
+.container {
   &.posts,
-  &.list-container, 
-  .user-content{
+  &.list-container,
+  .user-content {
     margin: 0 -10px;
     padding: 1rem 1.5rem;
   }
@@ -76,13 +75,12 @@
   }
 }
 
-.category-list-item{
-  border-right: 1px solid var(--primary-low)!important;
+.category-list-item {
+  border-right: 1px solid var(--primary-low) !important;
 }
 
-
-#topic-title{
-  .title-wrapper{
+#topic-title {
+  .title-wrapper {
     box-sizing: border-box;
     margin: 0 -10px;
     padding: 1.5rem 1.5rem 0;
@@ -92,26 +90,26 @@
 .topic-avatar {
   padding-top: 7px;
   margin-right: 0;
-  img{
+  img {
     width: 32px;
     height: auto;
   }
 }
 
-.topic-meta-data{
+.topic-meta-data {
   margin-left: 40px;
 }
 
-.topic-post{
-  article{
+.topic-post {
+  article {
     border-top: none;
   }
-  .row{
+  .row {
     padding-top: 2rem;
   }
 }
-.topic-post:first-child{
-  article{
+.topic-post:first-child {
+  article {
     border-top: none;
   }
 }
@@ -120,11 +118,12 @@
   border-top: none;
 }
 
-.topic-meta-data{
+.topic-meta-data {
   align-items: center;
 }
 
-.login-modal tr td label, .create-account tr td label {
+.login-modal tr td label,
+.create-account tr td label {
   max-width: unset;
 }
 

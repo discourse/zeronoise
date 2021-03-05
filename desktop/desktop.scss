@@ -1,32 +1,38 @@
-@import 'variables';
+@import "variables";
 
-.container{
-  &.list-container, 
-  .user-content{
-    border-radius: 0 .5rem .5rem .5rem;
+.container {
+  &.list-container,
+  .user-content {
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
     box-shadow: 0px 15px 27px rgba(17, 7, 60, 0.15);
   }
-  &.list-container{
+  &.list-container {
     padding: 24px 48px;
   }
-  &.posts{
-    & > .row{
+  &.posts {
+    & > .row {
       background: var(--main-background);
       padding: 1.5rem 2.5rem;
       border-radius: 0.5rem;
-      box-shadow: 0px 15px 27px rgba(17,7,60,0.15);
-    } 
+      box-shadow: 0px 15px 27px rgba(17, 7, 60, 0.15);
+    }
   }
 }
 
-#topic-title{
-  .title-wrapper{
+#topic-title {
+  .topic-statuses {
+    font-size: 3.4rem;
+  }
+  .title-wrapper {
     width: 70%;
     padding: 0 2.5rem;
   }
-  h1{
-    a{
+  h1 {
+    a {
       font-size: 3.4rem;
+    }
+    .edit-topic {
+      font-size: 1em;
     }
   }
 }
@@ -35,8 +41,11 @@
   gap: 0 1em; // the column needs some more horizontal gap due to the way we handle overflow in columns
 }
 
-
 .search-container .search-advanced .search-title button,
 .list-controls .select-kit.categories-admin-dropdown button {
   @extend %btn--big;
+}
+
+.category-breadcrumb {
+  margin-top: -0.4em; // vertical alignment
 }
