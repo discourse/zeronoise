@@ -200,7 +200,8 @@ ol.category-breadcrumb {
   .badge-section {
     font-size: 12px;
     margin-left: -2px;
-    .ember-view {
+    .user-badge,
+    .more-user-badges {
       border-radius: 16px;
     }
   }
