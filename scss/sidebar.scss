@@ -1,0 +1,42 @@
+.header-sidebar-toggle {
+  button.widget-button {
+    border-radius: 0.5rem;
+    transition: border-radius 0.2s;
+    .d-icon {
+      color: var(--header_primary);
+      font-size: 1em;
+    }
+    &:hover {
+      border-radius: 50%;
+      background-color: var(--tertiary);
+      .d-icon {
+        color: var(--light-accent);
+      }
+    }
+  }
+}
+
+.sidebar-wrapper {
+  background: transparent;
+
+  .sidebar-section-header-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+  }
+
+  .sidebar-footer-wrapper {
+    background: none;
+    .desktop-view & {
+      .sidebar-footer-container {
+        background: none;
+        &:before {
+          background: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(var(--secondary-rgb), 1)
+          );
+        }
+      }
+    }
+  }
+}
