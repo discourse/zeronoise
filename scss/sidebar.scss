@@ -15,3 +15,28 @@
     }
   }
 }
+
+.sidebar-wrapper {
+  background: transparent;
+
+  .sidebar-section-header-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+  }
+
+  .sidebar-footer-wrapper {
+    background: none;
+    .desktop-view & {
+      .sidebar-footer-container {
+        background: none;
+        &:before {
+          background: linear-gradient(
+            to bottom,
+            transparent,
+            rgba(var(--secondary-rgb), 1)
+          );
+        }
+      }
+    }
+  }
+}
