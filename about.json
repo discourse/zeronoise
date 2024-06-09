@@ -1,8 +1,8 @@
 {
-  "name": "zeronoise",
+  "name": "Zeronoise Theme",
   "component": false,
   "license_url": null,
-  "about_url": "https://github.com/ruidovisual/zeronoise",
+  "about_url": "https://meta.discourse.org/t/zeronoise-a-theme-aiming-to-create-a-pleasant-reading-experience/171809",
   "authors": "Miguel Arroyo - http://ruidovisual.com",
   "theme_version": 1.0,
   "minimum_discourse_version": null,
