@@ -1,3 +1,8 @@
+body {
+  // avoids an issue where the virtual keyboard covers content on Android
+  padding-bottom: env(keyboard-inset-height, 0);
+}
+
 .container {
   &.posts {
     background-color: var(--main-background);
