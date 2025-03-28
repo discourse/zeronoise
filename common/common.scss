@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "variables";
 @import "topic";
 @import "topic-list";
@@ -27,24 +28,27 @@ p {
   & > li {
     margin-right: 0;
   }
+
   & > li > a {
     background-color: transparent;
     border-bottom-width: 5px;
     border-bottom-style: solid;
     border-bottom-color: transparent;
     padding: 0.75em 1.5em;
-    color: lighten($primary, 30);
+    color: color.adjust($primary, $lightness: 30);
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.05em;
     line-height: 1.7rem;
+
     &:hover {
-      border-bottom-color: lighten($tertiary, 40);
+      border-bottom-color: color.adjust($tertiary, $lightness: 40);
       background-color: transparent;
       color: var(--primary);
     }
+
     &.active {
-      color: lighten($primary, 0);
+      color: color.adjust($primary, $lightness: 0);
       background-color: transparent;
       border-bottom-color: $tertiary;
       font-weight: bold;
@@ -54,29 +58,36 @@ p {
 
 .list-controls {
   margin-bottom: 0;
+
   .nav,
   .btn {
     margin-bottom: 0;
   }
+
   .btn {
     position: relative;
     background-color: $tertiary;
     color: var(--light-accent);
+
     .d-icon {
-      color: currentColor;
+      color: currentcolor;
     }
   }
+
   ol.category-breadcrumb {
     margin-bottom: 0;
     padding-left: 1rem;
   }
+
   .select-kit {
     float: none;
+
     .name {
       text-transform: uppercase;
       font-size: 0.75rem;
       letter-spacing: 0.03em;
     }
+
     .combo-box-header {
       border: none;
       padding: 0;
@@ -91,9 +102,11 @@ p {
   .user-content {
     background-color: var(--main-background);
   }
+
   &.posts {
     margin-bottom: 2rem;
   }
+
   .user-content {
     border-radius: 0.5rem;
     padding: 2rem;
@@ -132,6 +145,7 @@ ol.category-breadcrumb {
   align-items: center;
   position: relative;
   transition: all 0.2s;
+
   &::before {
     content: "";
     display: block;
@@ -141,20 +155,20 @@ ol.category-breadcrumb {
     border-radius: 50%;
     background-color: $danger;
   }
+
   &:hover {
     background-color: rgba(240, 239, 246, 0.6);
     text-decoration: underline;
   }
 }
 
-//directory
 .directory .user-info {
   display: flex;
   align-items: center;
 }
 
 #create-topic {
-  @extend %btn--big;
+  padding: 1rem 2rem;
 }
 
 .badge {
@@ -164,10 +178,12 @@ ol.category-breadcrumb {
     border-radius: 50%;
     width: 9px;
   }
+
   &-category-parent-bg {
     position: relative;
     z-index: 2;
   }
+
   &-wrapper.bullet &-category-parent-bg + &-category-bg {
     position: relative;
     z-index: 1;
@@ -179,28 +195,33 @@ ol.category-breadcrumb {
   background: none !important; // This is a conscious override to the custom background behavior.
   border-radius: 0.5rem;
   overflow: hidden;
+
   .card-content {
     background-color: white;
     padding: 1.5rem 1rem;
   }
+
   .first-row {
     .user-card-avatar {
       margin-top: 0;
     }
+
     .names,
     .usercard-controls {
       align-self: center;
     }
   }
+
   .card-row:not(.first-row) {
     margin: 2rem 0 1rem;
     font-size: 12px;
     padding-left: 9.3rem;
-    // display: none;
   }
+
   .badge-section {
     font-size: 12px;
     margin-left: -2px;
+
     .user-badge,
     .more-user-badges {
       border-radius: 16px;
@@ -226,7 +247,7 @@ ol.category-breadcrumb {
 .usercard-controls,
 .user-main .details {
   .btn {
-    @extend %btn--big;
+    padding: 1rem 2rem;
   }
 }
 
@@ -241,11 +262,12 @@ ol.category-breadcrumb {
   margin-bottom: 1rem;
 }
 
-.top-section:not(.stats-section):not(.badges-section) {
+.top-section:not(.stats-section, .badges-section) {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(2, 1fr);
-  &:before {
+
+  &::before {
     display: none;
   }
 }
@@ -257,6 +279,7 @@ ol.category-breadcrumb {
 .badge-card {
   border: none;
   background: transparent;
+
   .badge-contents .badge-icon a {
     text-align: center;
     border: 5px solid #ccc;
@@ -267,23 +290,29 @@ ol.category-breadcrumb {
     border-radius: 50%;
     height: 65px;
     width: 65px;
-    box-shadow: inset -2px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.3);
   }
+
   .badge-contents .badge-icon.badge-type-bronze a {
     @include badge($bronze);
   }
+
   .badge-contents .badge-icon.badge-type-gold a {
     @include badge($gold);
   }
+
   .badge-contents .badge-icon.badge-type-silver a {
     @include badge($silver);
   }
+
   .d-icon {
     width: 2rem;
   }
+
   .badge-summary {
-    color: lighten($primary, 30);
+    color: color.adjust($primary, $lightness: 30);
   }
+
   .badge-contents .badge-info h3 {
     margin-bottom: 0;
   }
@@ -293,22 +322,24 @@ ol.category-breadcrumb {
   .avatar-wrapper {
     margin-right: 16px;
   }
+
   .excerpt {
     padding-left: 65px;
+    font-size: 0.85rem;
   }
+
   .stream-topic-title {
     font-family: var(--heading-font-family);
     font-size: 1.1rem;
+
     a {
       color: inherit;
     }
+
     a:visited {
       color: inherit;
       opacity: 0.5;
     }
-  }
-  .excerpt {
-    font-size: 0.85rem;
   }
 }
 
@@ -318,10 +349,12 @@ ol.category-breadcrumb {
   align-items: center;
   height: 10rem;
   padding-top: 3rem;
+
   h3 {
     font-size: 1rem;
     font-weight: normal;
-    color: lighten($primary, 40);
+    color: color.adjust($primary, $lightness: 40);
+
     &::after {
       content: "✨";
     }
@@ -341,8 +374,9 @@ ol.category-breadcrumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: lighten($primary, 40);
+  color: color.adjust($primary, $lightness: 40);
   background-color: transparent;
+
   &::after {
     content: "🤖";
   }
@@ -356,37 +390,47 @@ ol.category-breadcrumb {
       box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
     }
   }
+
   &.dropdown-select-box.is-expanded {
     .select-kit-body {
       border-radius: 0.5rem;
     }
   }
+
   .select-kit-collection {
     background-color: transparent;
   }
+
   .select-kit-row {
     padding: 1rem;
+
     &.is-highlighted {
       background-color: var(--primary-low);
     }
+
     &.is-selected {
       background-color: var(--primary-low);
+
       &.is-highlighted {
         background-color: var(--tertiary-low);
       }
+
       .period-title .date-section {
         font-weight: bold;
       }
     }
+
     .date-section {
       font-size: 0.85rem;
     }
   }
 }
+
 .select-kit.dropdown-select-box.period-chooser {
   .period-chooser-row {
     font-weight: normal;
     padding: 0.5rem 1rem;
+
     .top-date-string {
       display: block;
       font-size: 0.75rem;
@@ -394,18 +438,22 @@ ol.category-breadcrumb {
       margin-left: 0;
     }
   }
+
   .period-chooser-header {
     border-radius: 0;
     margin-left: 0.6rem;
+
     // I have a personal standard of not going further than 2 indentation levels while creating scss rules
     h2.selected-name .top-date-string {
       font-size: 0.85rem;
       display: block;
       margin-top: 0.5em;
     }
+
     h2.selected-name .date-section {
       font-size: 1.2rem;
     }
+
     .d-icon {
       margin: 0;
       font-size: 1rem;
@@ -422,10 +470,12 @@ ol.category-breadcrumb {
     border-radius: 50%;
     background-color: var(--tertiary);
     border-color: transparent;
+
     .d-icon {
       color: var(--secondary);
     }
   }
+
   .icon img.avatar {
     position: relative;
     top: -1px;
@@ -435,13 +485,16 @@ ol.category-breadcrumb {
 .menu-panel {
   background-color: var(--main-background);
   border-radius: 0.5rem;
+
   li {
     a {
       transition: all 0.2s;
     }
+
     a.widget-link:hover {
       background-color: var(--tertiary);
       color: var(--light-accent);
+
       .d-icon {
         color: var(--light-accent);
       }
@@ -462,6 +515,7 @@ ol.category-breadcrumb {
       border-radius: 1rem;
     }
   }
+
   ul li {
     font-size: 1rem;
   }
@@ -480,26 +534,32 @@ div.menu-links-header {
     ul {
       padding: 0.5rem;
     }
+
     li {
       background-color: transparent;
       font-size: 0.85rem;
+
       &:hover {
         background-color: transparent;
       }
     }
+
     .read {
       background-color: transparent;
       opacity: 0.7;
     }
+
     li a,
     li button {
       color: inherit;
       padding: 0.75rem 0.25rem;
+
       &:hover {
         background-color: var(--primary-low);
       }
     }
   }
+
   .quick-access-profile {
     .read {
       opacity: 1;

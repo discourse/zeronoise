@@ -2,36 +2,40 @@
   .first {
     line-height: 45px;
     font-size: 1.2rem;
+
     a {
       color: inherit;
       font-weight: 600;
     }
   }
+
   .topic-body,
   .topic-avatar {
     border: none;
   }
+
   .row {
     padding-top: 4rem;
   }
 }
+
 .topic-post:first-child {
   .first {
     font-size: 1.3rem;
   }
+
   .topic-body {
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
     animation: none !important;
   }
+
   .contents {
     font-size: 1.1rem;
+
     p {
       line-height: 1.9;
     }
   }
+
   .row {
     padding-top: 1rem;
   }
@@ -43,6 +47,7 @@
 
 .topic-category {
   margin-left: 3px;
+
   .bullet,
   .discourse-tags {
     border: 1px solid #ccc;
@@ -64,15 +69,18 @@ aside.onebox {
 
 .topic-map {
   border: none;
-  background: linear-gradient(238deg, #ffffff, rgba(255, 255, 255, 0) 26.05%),
-    linear-gradient(136deg, #ffffff, rgba(255, 255, 255, 0) 10.92%),
+  background:
+    linear-gradient(238deg, #fff, rgba(255, 255, 255, 0) 26.05%),
+    linear-gradient(136deg, #fff, rgba(255, 255, 255, 0) 10.92%),
     linear-gradient(#e1dfed, rgba(255, 255, 255, 0) 24px);
+
   section {
     border: none;
   }
   padding-top: 1.5rem;
   margin-bottom: 3rem;
   transition: background 0.3s;
+
   .buttons .btn {
     background-color: transparent;
     border: none;
@@ -81,9 +89,11 @@ aside.onebox {
 
 .small-action .topic-avatar {
   width: 1.5rem;
+
   .d-icon {
     width: 0.75rem;
   }
+
   .d-icon-unlock-keyhole {
     color: var(--primary);
   }
@@ -106,12 +116,14 @@ aside.onebox {
 }
 
 #topic-footer-buttons {
-  //WARNING! You are not supposed to use id's for styling, but there's no other way to get to this element. I suggest adding a class to this element
+  // WARNING! You are not supposed to use id's for styling, but there's no other way to get to this element. I suggest adding a class to this element
   max-width: none;
+
   .pinned-button .reason,
   .topic-notifications-button .reason {
     display: flex;
   }
+
   .btn:last-child {
     margin-right: 0;
   }
@@ -120,10 +132,12 @@ aside.onebox {
 #topic-title {
   padding-top: 0;
   margin-bottom: 1.25rem;
+
   h1 {
     font-family: var(--heading-font-family);
     font-weight: bold;
     margin-bottom: 2rem;
+
     a {
       line-height: 1.1;
       font-size: 2rem;
@@ -137,6 +151,7 @@ aside.onebox {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--primary);
+
   .post-info a {
     color: inherit;
   }
@@ -146,6 +161,7 @@ aside.onebox {
   .header-title a {
     font-family: var(--heading-font-family);
   }
+
   .categories-wrapper,
   .topic-header-extra {
     display: none;

@@ -18,16 +18,19 @@
 
 .topic-list-item {
   position: relative;
+
   .main-link:first-of-type {
     padding-left: 3rem;
   }
+
   .posters {
-    &:before {
+    &::before {
       content: "";
       display: inline-block;
       height: 20px;
       width: 1px;
     }
+
     a:first-child {
       position: absolute;
       left: 10px;
@@ -42,6 +45,7 @@
     background-color: #fff;
     z-index: 3;
   }
+
   th {
     text-transform: uppercase;
     font-size: 0.75rem;
@@ -49,22 +53,27 @@
     letter-spacing: 0.035em;
     font-weight: bold;
   }
+
   td {
     padding: 1rem 0.5rem;
   }
+
   tbody tr {
     border-bottom: none;
     transition: background-color 1s;
+
     &:hover {
       transition: background-color 0.3s;
       background-color: var(--secondary);
     }
   }
+
   a.title {
     font-weight: 600;
     font-size: 1rem;
     font-family: var(--heading-font-family);
   }
+
   .suggested-topics & thead {
     background-color: transparent;
   }
