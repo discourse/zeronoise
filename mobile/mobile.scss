@@ -7,12 +7,24 @@ body {
   &.posts {
     background-color: var(--main-background);
   }
+
+  &.posts,
+  &.list-container,
+  .user-content {
+    margin: 0 -10px;
+    padding: 1rem 1.5rem;
+  }
+
+  &.posts > .row {
+    max-width: calc(100vw - 3rem);
+  }
 }
 
 .d-header {
   .wrap {
     padding: 0 1.5rem 0 1.6rem;
   }
+
   #site-logo {
     max-height: 1.6em;
   }
@@ -22,6 +34,7 @@ body {
   & > li {
     margin-right: 0;
   }
+
   & > li > a {
     padding: 0.75rem 0.85rem 0.4rem;
   }
@@ -31,13 +44,16 @@ body {
   ol.category-breadcrumb {
     padding-left: 0;
   }
+
   .nav-pills {
     margin: 0 1rem;
+
     .navigation-toggle {
       border-radius: 2rem;
       overflow: hidden;
     }
   }
+
   #create-topic {
     position: fixed;
     bottom: 5vh;
@@ -60,23 +76,12 @@ body {
   padding-left: 0;
 }
 
-.top-section:not(.stats-section):not(.badges-section) {
+.top-section:not(.stats-section, .badges-section) {
   display: block;
+
   .pull-right,
   .pull-left {
     float: none;
-  }
-}
-
-.container {
-  &.posts,
-  &.list-container,
-  .user-content {
-    margin: 0 -10px;
-    padding: 1rem 1.5rem;
-  }
-  &.posts > .row {
-    max-width: calc(100vw - 3rem);
   }
 }
 
@@ -95,6 +100,7 @@ body {
 .topic-avatar {
   padding-top: 7px;
   margin-right: 0;
+
   img {
     width: 32px;
     height: auto;
@@ -103,16 +109,19 @@ body {
 
 .topic-meta-data {
   margin-left: 40px;
+  align-items: center;
 }
 
 .topic-post {
   article {
     border-top: none;
   }
+
   .row {
     padding-top: 2rem;
   }
 }
+
 .topic-post:first-child {
   article {
     border-top: none;
@@ -121,10 +130,6 @@ body {
 
 .topic-list tbody {
   border-top: none;
-}
-
-.topic-meta-data {
-  align-items: center;
 }
 
 .login-modal tr td label,
