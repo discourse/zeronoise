@@ -16,13 +16,13 @@
   background: linear-gradient(
     149deg,
     $color,
-    color.adjust($color, $lightness: 40),
+    color.adjust($color, $lightness: 40%),
     $color
   );
-  border-color: color.adjust($color, $lightness: -10);
+  border-color: color.adjust($color, $lightness: -10%);
 
   .fa {
-    color: color.adjust($color, $lightness: -10) !important;
+    color: color.adjust($color, $lightness: -10%) !important;
   }
 }
 
