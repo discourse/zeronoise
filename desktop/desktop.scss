@@ -4,7 +4,7 @@
   &.list-container,
   .user-content {
     border-radius: 0 0.5rem 0.5rem 0.5rem;
-    box-shadow: 0 15px 27px rgba(17, 7, 60, 0.15);
+    box-shadow: 0 15px 27px rgb(17, 7, 60, 0.15);
   }
 
   &.list-container {
@@ -16,7 +16,7 @@
       background: var(--main-background);
       padding: 1.5rem 2.5rem;
       border-radius: 0.5rem;
-      box-shadow: 0 15px 27px rgba(17, 7, 60, 0.15);
+      box-shadow: 0 15px 27px rgb(17, 7, 60, 0.15);
     }
   }
 }

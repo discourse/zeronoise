@@ -35,20 +35,20 @@ p {
     border-bottom-style: solid;
     border-bottom-color: transparent;
     padding: 0.75em 1.5em;
-    color: color.adjust($primary, $lightness: 30);
+    color: color.adjust($primary, $lightness: 30%);
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.05em;
     line-height: 1.7rem;
 
     &:hover {
-      border-bottom-color: color.adjust($tertiary, $lightness: 40);
+      border-bottom-color: color.adjust($tertiary, $lightness: 40%);
       background-color: transparent;
       color: var(--primary);
     }
 
     &.active {
-      color: color.adjust($primary, $lightness: 0);
+      color: color.adjust($primary, $lightness: 0%);
       background-color: transparent;
       border-bottom-color: $tertiary;
       font-weight: bold;
@@ -140,7 +140,7 @@ ol.category-breadcrumb {
 }
 
 #list-area .show-more.has-topics .alert {
-  background-color: rgba(240, 239, 246, 1);
+  background-color: rgb(240, 239, 246, 1);
   border-radius: 2rem;
   align-items: center;
   position: relative;
@@ -157,7 +157,7 @@ ol.category-breadcrumb {
   }
 
   &:hover {
-    background-color: rgba(240, 239, 246, 0.6);
+    background-color: rgb(240, 239, 246, 0.6);
     text-decoration: underline;
   }
 }
@@ -290,7 +290,7 @@ ol.category-breadcrumb {
     border-radius: 50%;
     height: 65px;
     width: 65px;
-    box-shadow: inset -2px 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: inset -2px 0 5px rgb(0, 0, 0, 0.3);
   }
 
   .badge-contents .badge-icon.badge-type-bronze a {
@@ -310,7 +310,7 @@ ol.category-breadcrumb {
   }
 
   .badge-summary {
-    color: color.adjust($primary, $lightness: 30);
+    color: color.adjust($primary, $lightness: 30%);
   }
 
   .badge-contents .badge-info h3 {
@@ -353,7 +353,7 @@ ol.category-breadcrumb {
   h3 {
     font-size: 1rem;
     font-weight: normal;
-    color: color.adjust($primary, $lightness: 40);
+    color: color.adjust($primary, $lightness: 40%);
 
     &::after {
       content: "✨";
@@ -374,7 +374,7 @@ ol.category-breadcrumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: color.adjust($primary, $lightness: 40);
+  color: color.adjust($primary, $lightness: 40%);
   background-color: transparent;
 
   &::after {
@@ -387,7 +387,7 @@ ol.category-breadcrumb {
     .select-kit-body {
       border: none;
       background-color: var(--main-background);
-      box-shadow: 0 12px 12px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 12px 12px rgb(0, 0, 0, 0.15);
     }
   }
 
