@@ -26,5 +26,6 @@
     }
   },
   "modifiers": {},
+  "screenshots": ["screenshots/light.png", "screenshots/dark.png"],
   "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
 }
